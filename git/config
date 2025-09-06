@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[gui]
+	wmstate = normal
+	geometry = 1222x563+192+192 216 255
+[remote "azure"]
+	url = https://sinoral-aqe2aranhke3cnfg.scm.centralindia-01.azurewebsites.net:443/sinoral.git
+	fetch = +refs/heads/*:refs/remotes/azure/*
