@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Services - SINORAL{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Comprehensive technology solutions for your business</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="container">
+        <div class="services-grid">
+            {% for service in services %}
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="{{ service.icon }}"></i>
+                </div>
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+                <a href="{{ url_for('contact') }}" class="btn btn--outline">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="process">
+    <div class="container">
+        <h2 class="section-title">Our Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Discovery</h3>
+                <p>We understand your business needs and goals</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Planning</h3>
+                <p>We create a detailed strategy and roadmap</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Implementation</h3>
+                <p>We execute the solution with precision</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Support</h3>
+                <p>We provide ongoing support and maintenance</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

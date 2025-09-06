@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="highlight">SINORAL</span></h1>
+            <p class="hero-subtitle">A modern technology company focused on innovation and excellence</p>
+            <p class="hero-description">Transforming businesses through cutting-edge technology solutions and digital innovation</p>
+            <div class="hero-actions">
+                <a href="{{ url_for('services') }}" class="btn btn--primary btn--lg">Explore Services</a>
+                <a href="{{ url_for('contact') }}" class="btn btn--outline btn--lg">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-bg"></div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose SINORAL?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Innovation First</h3>
+                <p>We stay ahead of technology trends to deliver cutting-edge solutions</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Team</h3>
+                <p>Our skilled professionals bring years of experience to every project</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Reliable Solutions</h3>
+                <p>We deliver robust, scalable solutions you can depend on</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's work together to bring your vision to life with our innovative solutions</p>
+            <a href="{{ url_for('contact') }}" class="btn btn--primary btn--lg">Start Your Project</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
