@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 
 {% block title %}About Us - SINORAL{% endblock %}
+<!-- Mini About Section -->
+<section class="mini-about" style="text-align:center; padding: 50px 20px; background:#f9f9f9;">
+    <img src="{{ url_for('static', filename='static/images/Profile Photo.jpg') }}"
+         alt="Vishwajeet Kumar"
+         style="width:140px; height:140px; border-radius:50%; object-fit:cover; box-shadow:0 6px 18px rgba(0,0,0,0.15);">
+
+    <h3 style="margin-top:15px; font-size:24px; color:#222;">Vishwajeet Kumar</h3>
+    <p style="color:#0078D7; margin:5px 0; font-weight:600;">IT Support Specialist @ HCLTech</p>
+
+    <p style="max-width:700px; margin:10px auto; font-size:16px; color:#555;">
+        Helping teams stay productive through cloud and IT support — Microsoft 365, Azure, and Windows management.
+    </p>
+
+    <a href="{{ url_for('portfolio') }}" style="display:inline-block; padding:10px 20px; margin-top:12px;
+         background:#0078D7; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;">
+        View My Portfolio
+    </a>
+</section>
 
 {% block content %}
 <section class="page-header">
